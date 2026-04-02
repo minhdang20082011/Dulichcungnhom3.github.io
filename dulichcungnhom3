@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Việt Nam: Cẩm Nang Du Lịch Toàn Tập</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #d4af37;
+            --deep-red: #8e0000;
+            --dark: #1a1a1a;
+            --text: #333;
+            --light-gray: #f4f4f4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; line-height: 1.8; color: var(--text); overflow-x: hidden; scroll-behavior: smooth; }
+
+        /* Navigation */
+        nav {
+            position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95);
+            padding: 15px 50px; display: flex; justify-content: space-between;
+            align-items: center; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav .logo { font-family: 'Playfair Display', serif; font-weight: bold; font-size: 1.5rem; color: var(--deep-red); }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 30px; }
+        nav ul li a { text-decoration: none; color: var(--dark); font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        nav ul li a:hover { color: var(--gold); }
+
+        /* Hero */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover; background-position: center; background-attachment: fixed;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            color: white; text-align: center;
+        }
+        header h1 { font-family: 'Playfair Display', serif; font-size: 5rem; margin-bottom: 20px; animation: fadeIn 2s; }
+        header p { font-size: 1.5rem; font-weight: 300; max-width: 800px; }
+
+        /* Region Container */
+        section { padding: 100px 10%; }
+        .region-title { text-align: center; margin-bottom: 80px; }
+        .region-title h2 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--deep-red); }
+        .region-title p { font-style: italic; color: #777; font-size: 1.2rem; }
+
+        /* Detailed Content */
+        .content-block { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 120px; align-items: center; }
+        .content-block:nth-child(even) { direction: rtl; }
+        .content-block:nth-child(even) .text-box { direction: ltr; }
+        
+        .img-box { position: relative; border-radius: 20px; overflow: hidden; height: 500px; box-shadow: 20px 20px 0px var(--light-gray); }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.8s; }
+        .img-box:hover img { transform: scale(1.1); }
+
+        .text-box h3 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 20px; color: var(--dark); }
+        .text-box p { margin-bottom: 20px; text-align: justify; color: #555; }
+        .text-box ul { list-style: none; margin-bottom: 20px; }
+        .text-box ul li { padding-left: 25px; position: relative; margin-bottom: 10px; font-weight: 600; }
+        .text-box ul li::before { content: "✦"; position: absolute; left: 0; color: var(--gold); }
+
+        /* Travel Tips Table */
+        .tips-section { background: var(--dark); color: white; border-radius: 30px; padding: 60px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 30px; }
+        th, td { padding: 20px; border-bottom: 1px solid #444; text-align: left; }
+        th { color: var(--gold); font-size: 1.2rem; }
+
+        footer { background: #000; color: #fff; text-align: center; padding: 50px; }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        @media (max-width: 1024px) {
+            .content-block { grid-template-columns: 1fr; }
+            header h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">VIETNAM TRAVEL</div>
+        <ul>
+            <li><a href="#bac">MIỀN BẮC</a></li>
+            <li><a href="#trung">MIỀN TRUNG</a></li>
+            <li><a href="#nam">MIỀN NAM</a></li>
+            <li><a href="#amthuc">ẨM THỰC</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Việt Nam</h1>
+        <p>Hành trình khám phá vẻ đẹp tiềm ẩn qua 3 miền đất nước</p>
+    </header>
+
+    <section id="bac">
+        <div class="region-title">
+            <h2>Miền Bắc: Cái Nôi Văn Hiến</h2>
+            <p>Nơi hội tụ tinh hoa lịch sử và những cảnh quan núi non hùng vĩ bậc nhất</p>
+        </div>
+
+        <div class="content-block">
+            <div class="img-box">
+                <img src="images/hà giang.png" alt="Hà Giang">
+            </div>
+            <div class="text-box">
+                <h3>Hà Giang - Cao Nguyên Đá</h3>
+                <p>Hà Giang không dành cho những người thích sự nghỉ dưỡng nhàn hạ. Đây là vùng đất của những cung đường đèo hiểm trở, những vách đá tai mèo dựng đứng và lòng quả cảm. Đứng trên đỉnh Mã Pí Lèng, nhìn xuống dòng sông Nho Quế xanh ngắt như một dải lụa, bạn mới thấy hết sự kỳ vĩ của thiên nhiên Việt Nam.</p>
+                <ul>
+                    <li>Thời điểm: Tháng 10-11 (Mùa hoa Tam Giác Mạch)</li>
+                    <li>Điểm nhấn: Cột cờ Lũng Cú, Dinh thự họ Vương, Phố cổ Đồng Văn</li>
+                    <li>Lưu ý: Đường rất dốc, cần tay lái vững hoặc thuê xe ôm bản địa.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="img-box">
+                <img src="images/ninh bình.png" alt="Ninh Bình">
+            </div>
+            <div class="text-box">
+                <h3>Ninh Bình - Hạ Long Trên Cạn</h3>
+                <p>Ninh Bình sở hữu Quần thể danh thắng Tràng An - Di sản kép đầu tiên của Việt Nam được UNESCO công nhận. Vẻ đẹp nơi đây là sự kết hợp hoàn hảo giữa các dãy núi đá vôi uốn lượn, hệ thống hang động xuyên thủy và những di tích lịch sử tâm linh như chùa Bái Đính hay Cố đô Hoa Lư.</p>
+                <ul>
+                    <li>Trải nghiệm: Ngồi thuyền dọc sông Ngô Đồng tại Tam Cốc.</li>
+                    <li>Văn hóa: Khám phá lịch sử các triều đại Đinh, Lê tại Hoa Lư.</li>
+                    <li>Chụp ảnh: Đỉnh Hang Múa để ngắm trọn vẹn cánh đồng lúa bạt ngàn.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="trung" style="background-color: var(--light-gray);">
+        <div class="region-title">
+            <h2>Miền Trung: Con Đường Di Sản</h2>
+            <p>Những bãi biển quyến rũ và những công trình kiến trúc cổ kính vượt thời gian</p>
+        </div>
+
+        <div class="content-block">
+            <div class="img-box">
+                <img src="images/Đà Nẵng.png" alt="Đà Nẵng">
+            </div>
+            <div class="text-box">
+                <h3>Đà Nẵng - Thành Phố Đáng Sống</h3>
+                <p>Nằm giữa "đòn gánh" của đất nước, Đà Nẵng sở hữu bãi biển Mỹ Khê - một trong những bãi biển đẹp nhất hành tinh. Không chỉ có biển, Đà Nẵng còn nổi tiếng với Bà Nà Hills và Cầu Vàng (Golden Bridge) – biểu tượng du lịch mới của Việt Nam khiến cả thế giới phải trầm trồ.</p>
+                <ul>
+                    <li>Giải trí: Công viên Sun World Bà Nà Hills, Cầu Rồng phun lửa vào cuối tuần.</li>
+                    <li>Thiên nhiên: Bán đảo Sơn Trà với những chú Voọc chà vá chân nâu quý hiếm.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="img-box">
+                <img src="images/quảnh bình.png" alt="Quảng Bình">
+            </div>
+            <div class="text-box">
+                <h3>Quảng Bình - Vương Quốc Hang Động</h3>
+                <p>Nếu bạn là người yêu thích khám phá mạo hiểm, Quảng Bình là điểm đến số 1. Nơi đây sở hữu Sơn Đoòng - hang động tự nhiên lớn nhất thế giới, cùng hệ thống hang động tuyệt mỹ như Động Thiên Đường, Động Phong Nha.</p>
+                <ul>
+                    <li>Đặc thù: Cần đặt tour trước rất lâu nếu muốn vào Sơn Đoòng.</li>
+                    <li>Sức khỏe: Yêu cầu thể lực tốt cho các hoạt động leo núi, bơi hang.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="nam">
+        <div class="region-title">
+            <h2>Miền Nam: Sức Sống Mãnh Liệt</h2>
+            <p>Từ nhịp sống hối hả của Sài Thành đến sự yên bình của miền Tây sông nước</p>
+        </div>
+
+        <div class="content-block">
+            <div class="img-box">
+                <img src="images/Thành phố hồ chí minh.png" alt="TP.HCM">
+            </div>
+            <div class="text-box">
+                <h3>TP. Hồ Chí Minh - Hòn Ngọc Viễn Đông</h3>
+                <p>Sài Gòn không bao giờ ngủ. Đây là trung tâm kinh tế, văn hóa sôi động nhất Việt Nam. Nơi bạn có thể thấy những tòa nhà chọc trời như Landmark 81 nằm cạnh những ngôi chùa cổ kính và các công trình kiến trúc Pháp đặc trưng như Nhà thờ Đức Bà, Bưu điện Thành phố.</p>
+                <ul>
+                    <li>Ẩm thực: Cà phê bệt, ốc vỉa hè, cơm tấm đêm.</li>
+                    <li>Lịch sử: Dinh Độc Lập, Bảo tàng Chứng tích Chiến tranh.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-block">
+            <div class="img-box">
+                <img src="images/đbscl.png" alt="Miền Tây">
+            </div>
+            <div class="text-box">
+                <h3>Đồng Bằng Sông Cửu Long</h3>
+                <p>Về với miền Tây là về với sự hào sảng của con người và sự trù phú của sản vật địa phương. Bạn sẽ được trải nghiệm văn hóa chợ nổi trên sông từ tờ mờ sáng, ghé thăm những vườn trái cây trĩu quả và nghe điệu đờn ca tài tử đặc sắc.</p>
+                <ul>
+                    <li>Điểm đến: Chợ nổi Cái Răng (Cần Thơ), rừng tràm Trà Sư (An Giang).</li>
+                    <li>Đặc sản: Lẩu mắm, cá lóc nướng trui, kẹo dừa.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="tips-section">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; text-align: center;">Thông Tin Hữu Ích Cho Chuyến Đi</h2>
+            <table>
+                <tr>
+                    <th>Hạng mục</th>
+                    <th>Thông tin chi tiết</th>
+                </tr>
+                <tr>
+                    <td>Thời điểm tốt nhất</td>
+                    <td>Tháng 3 đến tháng 5 (Mùa xuân) hoặc tháng 9 đến tháng 11 (Mùa thu) để có thời tiết ôn hòa trên cả 3 miền.</td>
+                </tr>
+                <tr>
+                    <td>Tiền tệ</td>
+                    <td>Việt Nam Đồng (VND). Các thành phố lớn chấp nhận thẻ, nhưng vùng sâu vùng xa bạn nên mang theo tiền mặt.</td>
+                </tr>
+                <tr>
+                    <td>Di chuyển</td>
+                    <td>Máy bay cho các chặng dài, tàu hỏa cho trải nghiệm ngắm cảnh, và xe máy (Grab/xanh SM) cho di chuyển nội thành.</td>
+                </tr>
+                <tr>
+                    <td>Ngôn ngữ</td>
+                    <td>Tiếng Việt là chính. Tiếng Anh được sử dụng rộng rãi tại các khu du lịch và giới trẻ.</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+<center>
+	<iframe width="1200" height="500" src="https://www.youtube.com/embed/Au6LqK1UH8g?si=mDIhdgejiEzdm5-y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+	
+
+
+<footer>
+        <p style="font-size: 1.2rem; color: var(--gold); font-family: 'Playfair Display', serif;">VIETNAMTRAVEL</p>
+        <p style="margin-top: 10px; font-weight: 300;">Cẩm nang du lịch Việt Nam 2026</p>
+        <p>&copy; Designed by HONGMINH. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
